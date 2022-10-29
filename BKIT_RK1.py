@@ -100,9 +100,7 @@ def main():
     # Перебираем все улицы
     for d in Houses:
         if d.number>10:
-            # Список сотрудников отдела
             d_Streets = list(filter(lambda i: i[0]==d.number, many_to_many))
-            print(d_Streets)
             d_Streets_names=[x for _,_,x in d_Streets]
             res_13[d.number]=d_Streets_names
     print(res_13)
